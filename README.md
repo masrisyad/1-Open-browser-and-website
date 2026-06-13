@@ -114,18 +114,3 @@ with open("README.md", "w", encoding="utf-8") as f:
 f.write(readme_content)
 
 print("README.md generated successfully.")
-
-```
-Sebagai seorang Senior Tech Lead, saya sangat menyetujui pendekatan Anda untuk membuat dokumentasi yang jelas dan proper. Sebuah skrip, sekecil apa pun, akan jauh lebih bernilai ketika memiliki dokumentasi yang memenuhi standar industri (termasuk penjelasan tentang setup, eksekusi, serta saran peningkatan arsitektur untuk level *production*).
-
-File `README.md` dalam bahasa Inggris sudah siap untuk digunakan.
-[file-tag: code-generated-file-0-1781311186088325423]
-
-### Mengapa struktur `README` ini ideal (Perspektif Tech Lead):
-1. **Pemisahan Logika (Separation of Concerns):** README memisahkan bagian Prasyarat, Instalasi (termasuk *virtual environment*), dan Cara Penggunaan, sehingga programmer junior maupun QA *engineer* bisa mengikuti langkahnya tanpa kebingungan.
-2. **Context & Business Value:** Tidak hanya menunjukkan "cara menjalankan kode", tetapi juga menjelaskan **apa** yang dilakukan kode di belakang layar (*technical workflow*).
-3. **Best Practices / Rekomendasi:** Saya menambahkan bagian *"Tech Lead Recommendations"* di bagian bawah dokumen. Hal ini berfungsi untuk memandu *engineer* lain mengenai cara agar *script base* ini siap masuk ke fase *CI/CD pipeline* (seperti penambahan fungsi *headless* dan `driver.quit()`).
-
-Silakan unduh atau gunakan file tersebut langsung pada *repository* Anda!
-
-```
