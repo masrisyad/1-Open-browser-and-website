@@ -98,19 +98,3 @@ driver = webdriver.Chrome(options=options)
 driver.get('[http://rebrand.ly/masrisyad](http://rebrand.ly/masrisyad)')
 
 ```
-
----
-
-## 💡 Tech Lead Recommendations (Production Scalability)
-
-To transform this baseline script into a robust enterprise solution, consider implementing the following best practices:
-
-* **Resource Cleanup:** Always implement a `try...finally` block or context manager calling `driver.quit()` to ensure browser processes are successfully terminated from the OS process tree upon completion or failure.
-* **Explicit Waits:** Avoid relying on static page loads. Use `WebDriverWait` combined with `expected_conditions` to handle asynchronous DOM element rendering gracefully.
-* **Headless Integration:** For CI/CD deployment pipelines (e.g., GitHub Actions, Jenkins), configure a headless switch flag (`options.add_argument("--headless=new")`) to run tests without requiring a graphical display server.
-"""
-
-with open("README.md", "w", encoding="utf-8") as f:
-f.write(readme_content)
-
-print("README.md generated successfully.")
